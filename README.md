@@ -1,2 +1,2 @@
-# goit-markup-hw-04
-4.ödev
+# goit-markup-hw-02
+Ödev #2
