@@ -147,7 +147,6 @@ img {
 
 /* İLK ALAN / LACİVERT BAŞLANGIÇ */
 .hero {
-  background-color: #2e2f42;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -260,19 +259,12 @@ img {
 /*  OUR TEAM / ÜÇÜNCÜ ALAN BAŞLANGIÇ */
 .team {
   background: #f4f4fd;
-  padding: 120px 0 120px;
+  padding: 120px 0;
 }
 
-.team .container {
-  padding: 0;
-  margin: 0 auto;
-}
-
-.team .team-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
@@ -281,43 +273,22 @@ img {
 .team-list {
   display: flex;
   gap: 24px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .team-card {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   width: calc((100% - 3 * 24px) / 4);
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px rgba(46,47,66,0.08),
+              0 1px 1px rgba(46,47,66,0.16),
+              0 1px 6px rgba(46,47,66,0.08);
 }
 
 .team-image {
-  display: block;
   width: 100%;
   height: auto;
-}
-
-.team-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  padding-top: 32px;
-}
-
-.team-role {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #434455;
-  padding-top: 8px;
 }
 
 .team-name-role {
@@ -328,97 +299,71 @@ img {
   gap: 8px;
 }
 
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  padding: 0;
+}
+
+.team-role {
+  font-size: 16px;
+  color: #434455;
+  padding: 0;
+}
+
 .team-link-list {
-  list-style: none;
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding: 0;
-  margin: 0;
 }
 
 .team-link-items {
-  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
+  background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
-  fill: #f4f4fd;
   justify-content: center;
   align-items: center;
+  fill: #f4f4fd;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-link-items:hover,
-.team-link-items:focus {
+.team-link-items:hover {
   background-color: #404bbf;
 }
+
 /*  OUR TEAM / ÜÇÜNCÜ ALAN BİTİŞ */
 
 /* OUR PORTFOLIO / DÖRDÜNCÜ ALAN / BAŞLANGIÇ */
-.our-portfolio .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.our-portfolio {
+  padding: 120px 0;
 }
-.our-portfolio .portfolio-title {
+
+.portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 72px;
 }
 
-.our-portfolio .portfolio-list {
-  list-style-type: none;
+.portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 24px;
 }
 
-.our-portfolio .portfolio-card {
-  width: calc((100% - 2 * 24px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-.portfolio .portfolio-card::hover .portfolio-item-text {
-  transform: translateY(0%);
+.portfolio-card {
+  width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio .portfolio-card::hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  background-color: #fff;
-}
-
-.our-portfolio .portfolio-name {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-top: 32px;
-  margin-bottom: 8px;
-  margin-left: 16px;
-  text-align: left;
-}
-
-.our-portfolio .text {
-  padding: 32px 16px;
-  border-bottom: 1px solid #e7e9fc;
-  border-left: 1px solid #e7e9fc;
-  border-right: 1px solid #e7e9fc;
-}
-
-.our-portfolio .portfolio-category {
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  margin-left: 16px;
-  margin-bottom: 32px;
-  text-align: left;
+.portfolio-card:hover {
+  box-shadow: 0px 1px 6px rgba(46,47,66,0.08),
+              0px 1px 1px rgba(46,47,66,0.16),
+              0px 2px 1px rgba(46,47,66,0.08);
 }
 
 .portfolio-thumb {
@@ -426,20 +371,10 @@ img {
   overflow: hidden;
 }
 
-.portfolio-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-/* Hover ile çıkan açıklama metni */
 .portfolio-item-text {
   position: absolute;
   top: 0;
   background-color: #4d5ae5;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
   padding: 40px 32px;
   height: 100%;
@@ -448,8 +383,29 @@ img {
 }
 
 .portfolio-thumb:hover .portfolio-item-text {
-  transform: translateY(0%);
+  transform: translateY(0);
 }
+
+.text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-name {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.portfolio-category {
+  font-size: 16px;
+  color: #434455;
+  margin: 0;
+}
+
 
 /* OUR PORTFOLIO / DÖRDÜNCÜ ALAN / BİTİŞ */
 
@@ -458,7 +414,6 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
-  gap: 120px;
 }
 
 .footer-container {
@@ -467,22 +422,13 @@ img {
   gap: 120px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
-.footer-logo-1 {
-  margin-right: 120px;
-}
-
-.logo-blue {
-  color: #f4f4fd;
-}
 
 .footer-logo {
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
   display: inline-block;
@@ -490,15 +436,13 @@ img {
   text-decoration: none;
 }
 
-.logo-blue {
+.footer-logo .logo-blue {
   color: #4d5ae5;
 }
 
 .footer-description {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
 }
@@ -506,8 +450,6 @@ img {
 .social-media {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
 }
@@ -515,15 +457,9 @@ img {
 .footer-icon {
   display: flex;
   gap: 16px;
-  list-style: none;
 }
 
 /* İkon kutuları */
-.social-media-icon {
-  width: 40px;
-  height: 40px;
-}
-
 .icon-media {
   width: 40px;
   height: 40px;
@@ -532,14 +468,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Hover efekt */
-.icon-media:hover,
-.icon-media:focus {
+.icon-media:hover {
   background-color: #31d0aa;
 }
+
 
 /* SVG ikon rengi */
 .icon {
@@ -548,3 +483,41 @@ img {
 
 
 /* FOOTER BİTİŞ */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1024px) {
+  .services-list,
+  .team-list,
+  .portfolio-list {
+    flex-wrap: wrap;
+  }
+
+  .service-item,
+  .team-card,
+  .portfolio-card {
+    width: calc(50% - 12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 15px;
+  }
+
+  .services,
+  .team,
+  .our-portfolio {
+    padding: 72px 0;
+  }
+
+  .service-item,
+  .team-card,
+  .portfolio-card {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
